@@ -12,7 +12,9 @@ import {test, expect} from '@playwright/test';
 // It allows for writing asynchronous code in a more synchronous manner, making it easier to read and understand.
 
 
-test('has title', async ({page}) => {
+test('Verify title', async ({page}) => {
   await page.goto('https://playwright.dev/');       
 await expect(page).toHaveTitle(/Playwright/);
+
 });
+

@@ -1,9 +1,8 @@
 
-/*
+
 import {test, expect} from '@playwright/test';
 
-test('has title', async ({page}) => {
-  await page.goto('https://chatgpt.com');       
-//await expect(page).toHaveTitle(/chat/);
+test('VerifyClick on button', async ({page}) => {
+  await page.goto('https://playwright.dev/'); 
+  await page.getByRole('link', { name: 'Get started' }).click();
 });
-*/
